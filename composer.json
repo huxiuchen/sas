@@ -1,0 +1,5 @@
+{
+    "require": {
+        "simplon/mysql": "^1.3"
+    }
+}
