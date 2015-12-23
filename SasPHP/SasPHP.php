@@ -16,11 +16,12 @@ class SasPHP{
 
     static public function handleFatal(){
         global $globalRes;
-        $globalRes->end('[]');
+        $errorMsg = error_get_last();
+        $globalRes->end($errorMsg['message']);
     }
 
     static public function autoload($class) {
-        require_once BASEDIR.str_replace('\\', '/', $class).'.php';
+        require_once BASEDIR.'/'.str_replace('\\', '/', $class).'.php';
     }
 
     static public function dispatch(){
