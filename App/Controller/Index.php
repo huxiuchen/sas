@@ -11,12 +11,12 @@ class Index {
     public function index(){
         $arr['error'] = 0;
         $arr['msg'] = 'nmb';
-        jecho($arr);
+        return json_encode($arr);
     }
 
     public function category(){
         $arr['error'] = 1;
         $arr['msg'] = 'nmb';
-        jecho($arr);
+        return json_encode($arr);
     }
 }
