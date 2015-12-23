@@ -17,7 +17,19 @@ version : 1.0<br>
     3 浏览器访问 http://ip:端口/controller/action?p1=v1&p2=v2<br>
 
 ab压测：<br>
-    待测试...<br>
+    通过使用apache bench工具进行压力测试，在 单核 + 1G内存的机器上，可以达到近1万QPS。性能几乎接近与Nginx的静态文件处理。<br>
+    ab -c 200 -n 200000 -k http://127.0.0.1:9502/index/index<br>
+    Concurrency Level:      200<br>
+    Time taken for tests:   16.349 seconds<br>
+    Complete requests:      200000<br>
+    Failed requests:        0<br>
+    Keep-Alive requests:    200000<br>
+    Total transferred:      35200000 bytes<br>
+    HTML transferred:       4600000 bytes<br>
+    Requests per second:    12232.97 [#/sec] (mean)<br>
+    Time per request:       16.349 [ms] (mean)<br>
+    Time per request:       0.082 [ms] (mean, across all concurrent requests)<br>
+    Transfer rate:          2102.54 [Kbytes/sec] received<br>
 
 
 迭代计划ing：<br>
