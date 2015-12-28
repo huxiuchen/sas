@@ -2,7 +2,7 @@
 /**
  * User: Hufeng
  * Date: 2015/12/15 17:36
- * Desc: 
+ * Desc: 核心文件
  */
 namespace SasPHP;
 

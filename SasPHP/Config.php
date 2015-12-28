@@ -1,4 +1,9 @@
 <?php
+/**
+ * User: Hufeng
+ * Date: 2015/12/15 17:36
+ * Desc: 加载配置文件基类
+ */
 namespace SasPHP;
 
 class Config implements \ArrayAccess
