@@ -14,6 +14,7 @@ class SasPHP{
         return self::dispatch();
     }
 
+    // 异常处理
     static public function handleFatal(){
         global $globalRes;
         $errorMsg = error_get_last();
