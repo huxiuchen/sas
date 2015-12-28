@@ -10,7 +10,7 @@ return array(
         'server' => '127.0.0.1', // 服务器地址
         'database' => 'book', // 数据库名
         'username' => 'root', // 用户名
-        'password' => 'hufeng', // 密码
+        'password' => '', // 密码
         'port' => 3306, // 端口
         'charset'=> 'utf8', // 字符集
     )
