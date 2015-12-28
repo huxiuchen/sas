@@ -1,5 +1,6 @@
 {
     "require": {
-        "simplon/mysql": "^1.3"
+        "simplon/mysql": "^1.3",
+        "desarrolla2/cache": "^2.0"
     }
 }
