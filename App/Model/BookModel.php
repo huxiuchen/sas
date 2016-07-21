@@ -10,7 +10,7 @@ use SasPHP\Model;
 class BookModel extends Model{
 
     function findData(){
-        $query = 'SELECT * FROM dc_book LIMIT 2';
+        $query = 'SELECT * FROM news_type LIMIT 2';
         $results = $this->dbConn->fetchRowMany($query);
         return json_encode($results);
     }
